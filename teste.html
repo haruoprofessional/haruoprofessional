@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lucas Haruo Kataoka</title>
+    <style>
+      /* ÂNCORA DA IMAGEM DE FUNDO - TROQUE O NOME DO ARQUIVO AQUI */
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+
+        background-image: url('sua-imagem.jpg'); /* <-- COLOCA SUA IMAGEM AQUI */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: #111; /* cor caso a imagem não carregue */
+      }
+
+      /* Escurece um pouco o fundo pra o texto ler melhor */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: 0;
+      }
+
+      .card {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        color: white;
+        background: rgba(255, 255, 255, 0.12);
+        padding: 40px 50px;
+        border-radius: 16px;
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+      }
+
+      h1 {
+        margin: 0 0 12px 0;
+        font-size: 38px;
+      }
+
+      h3 {
+        margin: 6px 0;
+        font-weight: normal;
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Lucas Haruo Kataoka</h1>
+      <h3>Nascido em São Paulo, Brasil em 13/07/1994</h3>
+      <h3>Estudando DSM (Desenvolvimento de Software Multiplataforma)</h3>
+    </div>
+  </body>
+</html>
